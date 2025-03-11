@@ -1,23 +1,31 @@
 /*estilos*/
-h1{ color: var(--fontColor);
+h1 {
+    color: var(--fontColor);
 }
-*{/*altera todos os elementos*/
-   
+
+* {
+    /*altera todos os elementos*/
+
     font-family: "Segoe Script", cursive;
 }
+
 body {
     background: var(--bg);
 
 }
 
 ul {
-    border-radius:5px;
-    font-family:/*"Comic Sans MS", cursive, sans-serif;*/"Brush Script MT", cursive;
-    background-color:var(--principal);
-   
+    border-radius: 5px;
+    font-family:
+        /*"Comic Sans MS", cursive, sans-serif;*/
+        "Brush Script MT", cursive;
+    background-color: var(--principal);
+
 }
 
-#par{ color: var(--paragrafos);}
+#par {
+    color: var(--paragrafos);
+}
 
 /*'propriedade:"valor"'*/
 li {
@@ -36,26 +44,27 @@ li {
     --especial: #a06e3d;
     --claro: #ffedba;
     --escuro: #623309;
-    --meioclaro:#e8cb9a;
+    --meioclaro: #e8cb9a;
 }
 
-.light-theme{
+.light-theme {
     --bg: var(--claro);
     --fontColor: var(--escuro);
-    --paragrafos:var(--meioclaro);
-    --principal:var(--especial);
+    --paragrafos: var(--meioclaro);
+    --principal: var(--especial);
     --btnBg: var(--escuro);
-    --btnFontColor:var(--claro);
+    --btnFontColor: var(--claro);
 }
 
 .dark-theme {
     --bg: var(--escuro);
     --fontColor: var(--meioclaro);
-    --paragrafos:var(--especial);
-    --principal:var(--claro);
+    --paragrafos: var(--especial);
+    --principal: var(--claro);
     --btnBg: var(--claro);
-    --btnFontColor:var(--escuro);
+    --btnFontColor: var(--escuro);
 }
+
 /*--variável = que posso reutilizar ao longo do código. podemos definir 
 as variáveis dentro do seletor :root que significa que elas estão
 acessíveis globalmente. como se fossem colocadas no topo do <html>
@@ -67,18 +76,24 @@ a função var() pega o valor da varipavel que definimos*/
 
 
 .btn {
-    color: var(--btnFontColor);  /* Cor da fonte */
-    background-color: var(--btnBg);  /* Cor de fundo */
-    position: absolute;  /* Posição absoluta */
-    top: 20px;  /* 20px do topo */
-    right: 20px;  /* 20px do lado direito */
+    color: var(--btnFontColor);
+    /* Cor da fonte */
+    background-color: var(--btnBg);
+    /* Cor de fundo */
+    position: absolute;
+    /* Posição absoluta */
+    top: 20px;
+    /* 20px do topo */
+    right: 20px;
+    /* 20px do lado direito */
     height: 50px;
     width: 50px;
-    border-radius: 50%;  /* Faz o botão redondo */
+    border-radius: 50%;
+    /* Faz o botão redondo */
     border: none;
-  }
-  
-  .btn:focus {
-    outline-style: none;  /* Remove o contorno de foco */
-  }
-  
+}
+
+.btn:focus {
+    outline-style: none;
+    /* Remove o contorno de foco */
+}
