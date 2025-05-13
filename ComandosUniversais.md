@@ -1,6 +1,6 @@
 # Comandos de Terminal: Linux (Bash) vs Windows (CMD)
 
-## 📁 Navegação e Manipulação de Arquivos
+## 📁 Lidar com Arquivos
 
 | Ação                          | **Linux (Bash)**       | **Windows (CMD)**        |
 |------------------------------|------------------------|--------------------------|
@@ -57,12 +57,6 @@
 | `head -n 10 arquivo.txt`   | Primeiras 10 linhas                    | `more arquivo.txt`                |
 | `df -h`                    | Espaço em disco                        | `wmic logicaldisk get size,freespace,caption` |
 | `top`                      | Processos em tempo real                | `tasklist` + `taskkill`           |
-
----
-
-## ⚠️ Observações Importantes:
-- **CMD** não tem tantas funcionalidades avançadas como o **Bash**, como redirecionamento de fluxos, piping e uso de expressões regulares.
-- Para funcionalidades mais poderosas no Windows, use o **PowerShell**, que oferece mais flexibilidade e recursos, como variáveis e manipulação avançada de objetos.
 
 ---
 
