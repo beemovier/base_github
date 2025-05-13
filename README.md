@@ -1,71 +1,29 @@
-# Comandos de Terminal: Linux (Bash) vs Windows (CMD)
+# Meu Primeiro Repositório: Tutoriais Próprios
 
-## 📁 Navegação e Manipulação de Arquivos
+Este é meu primeiro repositório no GitHub, e aqui vou começar a compartilhar alguns **tutoriais que estou criando** sobre os tópicos que estou estudando. A ideia é reunir e organizar o que aprendo, de uma forma que possa ser útil para outras pessoas também.
 
-| Ação                          | **Linux (Bash)**       | **Windows (CMD)**        |
-|------------------------------|------------------------|--------------------------|
-| Mostrar diretório atual      | `pwd`                  | `cd`                     |
-| Listar arquivos              | `ls`                   | `dir`                    |
-| Mudar de diretório           | `cd pasta`             | `cd pasta`               |
-| Voltar um nível              | `cd ..`                | `cd ..`                  |
-| Voltar pro anterior          | `cd -`                 | **não existe no CMD**    |
-| Criar diretório              | `mkdir pasta`          | `mkdir pasta`            |
-| Apagar diretório vazio       | `rmdir pasta`          | `rmdir pasta`            |
-| Apagar diretório e conteúdo  | `rm -r pasta`          | `rmdir /s pasta`         |
-| Criar arquivo vazio          | `touch arquivo.txt`    | `type nul > arquivo.txt` |
-| Mostrar conteúdo do arquivo  | `cat arquivo.txt`      | `type arquivo.txt`       |
-| Editar arquivo (terminal)    | `nano arquivo.txt`     | `notepad arquivo.txt`    |
-| Copiar arquivo               | `cp a.txt b.txt`       | `copy a.txt b.txt`       |
-| Mover ou renomear arquivo    | `mv a.txt pasta/`      | `move a.txt pasta\`      |
-| Apagar arquivo               | `rm arquivo.txt`       | `del arquivo.txt`        |
+### O Que Vai Ter Aqui
+- **Guias passo a passo** de alguns assuntos que eu estou explorando.
+- **Exemplos de código** que ajudam a entender melhor certos conceitos.
+- **Dicas** e pequenos truques que descobri durante o aprendizado.
 
----
+A ideia não é ser um repositório super completo, mas sim um **espaço prático** com o que estou aprendendo e testando no dia a dia.
 
-## ⚙️ Execução e Scripts
+### Tópicos Principais
+Os tutoriais vão cobrir temas como:
+- **Programação**: Em C, C++, Python e outras linguagens.
+- **Sistemas Embarcados**: Como programar microcontroladores e interagir com o hardware.
+- **Arquitetura de Computadores**: Para entender como os computadores realmente funcionam.
+- **Ferramentas de Desenvolvimento**: Como usar e configurar as ferramentas que uso no meu trabalho.
 
-| Ação                              | **Linux (Bash)**        | **Windows (CMD)**           |
-|----------------------------------|--------------------------|-----------------------------|
-| Executar script no shell         | `./script.sh`            | `script.bat` (direto)       |
-| Dar permissão de execução        | `chmod +x script.sh`     | **não necessário**          |
-| Executar arquivo em pasta atual  | `./programa`             | `programa.exe`              |
-| Executar com outro shell         | `bash script.sh`         | `cmd /c script.bat`         |
-| Rodar comando em novo shell      | `source script.sh`       | `call script.bat`           |
+### Como Contribuir
+- Se encontrar algo que possa ser melhorado ou adicionado, **ficarei feliz com contribuições**.
+- **Fork** o repositório e envie um **Pull Request** com suas sugestões ou melhorias.
+
+### Quem Sou Eu
+Sou **Erick**, estudante de Engenharia de Computação. Estou criando esse repositório para organizar meus estudos e compartilhar o que estou aprendendo, com o objetivo de ajudar quem estiver com dúvidas parecidas com as minhas.
 
 ---
 
-## 🛠️ Outros Comandos Importantes
-
-| Linux / Bash        | Descrição                           | Windows CMD Equivalente            |
-|---------------------|-------------------------------------|-------------------------------------|
-| `echo`              | Imprime no terminal                 | `echo`                              |
-| `clear`             | Limpa a tela                        | `cls`                               |
-| `history`           | Mostra histórico                    | **Não tem. Use setas ↑ ↓**         |
-| `man comando`       | Manual do comando                   | **Não tem. Use `/help comando`**    |
-| `which comando`     | Caminho do executável               | `where comando`                     |
-| `alias`             | Atalho pra comandos                 | **Não tem no CMD, só em PowerShell**|
-| `exit`              | Sai do terminal                     | `exit`                              |
-
----
-
-## 🧪 Comandos Bônus Ninja
-
-| Linux / Bash               | Descrição                              | CMD Equivalente                   |
-|----------------------------|----------------------------------------|------------------------------------|
-| `sleep 5`                  | Espera 5 segundos                      | `timeout /t 5 /nobreak > nul`     |
-| `grep`                     | Filtra linhas com padrão               | `findstr`                         |
-| `tail -n 10 arquivo.txt`   | Últimas 10 linhas                      | `more +N arquivo.txt` (gambiarra) |
-| `head -n 10 arquivo.txt`   | Primeiras 10 linhas                    | `more arquivo.txt`                |
-| `df -h`                    | Espaço em disco                        | `wmic logicaldisk get size,freespace,caption` |
-| `top`                      | Processos em tempo real                | `tasklist` + `taskkill`           |
-
----
-
-## ⚠️ Observações Importantes:
-- **CMD** não tem tantas funcionalidades avançadas como o **Bash**, como redirecionamento de fluxos, piping e uso de expressões regulares.
-- Para funcionalidades mais poderosas no Windows, use o **PowerShell**, que oferece mais flexibilidade e recursos, como variáveis e manipulação avançada de objetos.
-
----
-
-## 📝 Como Usar este Documento:
-Você pode usar esse arquivo `.md` para consultar rapidamente as diferenças de comandos entre Linux e CMD. Também pode ser útil se você estiver migrando entre os dois sistemas ou trabalhando com ambos ao mesmo tempo.
+Dá uma olhada de vez em quando, pois vou atualizando o repositório à medida que for criando novos tutoriais.
 
