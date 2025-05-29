@@ -4,7 +4,9 @@
 pwd                          # Mostra o caminho da pasta atual (Print Working Directory)
 mkdir nova/                  # Cria uma nova pasta
 ls                           # Lista arquivos e pastas
+la                           # É um alias para o ls, mas que exibe ficheiros ocultos
 cd pasta/                    # Entra em uma pasta
+
 cd ..                        # Volta uma pasta
 cd -                         # Volta para a pasta anterior
 touch arquivo.txt            # Cria um arquivo
