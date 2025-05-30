@@ -38,7 +38,10 @@ git config --global user.email "seu@email.com"
 
 ### Clonar repo
 ```bash
+cat -vet ~/.bash_history | grep git #pra evitar caracteres invisiveis
 git clone https://github.com/usuario/repositorio
+git clone git@github.com:usuario/repositorio.git
+
 ```
 
 ---
@@ -64,7 +67,7 @@ git commit -m "mensagem do commit"  # Comita tudo que foi alterado sem precisar 
 
 ---
 
-### 🚀 Enviar alterações para o GitHub
+###  Enviar alterações para o GitHub
 ```bash
 git push origin nome-da-branch
 git push -u origin nome-da-branch    # Primeiro push da branch
@@ -73,7 +76,7 @@ git push --force origin nome-da-branch   # Push forçado (ignorando bloqueios)
 
 ---
 
-### 📥 Puxar atualizações do repositório remoto
+###  Puxar atualizações do repositório remoto
 ```bash
 git pull
 git pull origin master --rebase   # Tenta colocar suas alterações por cima, evitando conflitos
@@ -91,7 +94,7 @@ git log  --oneline   # Versão resumida do histórico
 
 ---
 
-## 🔐 GCM: Git Credential Manager no Linux
+##  GCM: Git Credential Manager no Linux
 
 ### 📦 Instalar
 ```bash
@@ -99,16 +102,17 @@ sudo apt update && sudo apt upgrade
 sudo apt install git-credential-manager-core
 ```
 
-### ⚙️ Configurar
+### Configurar
 ```bash
 git config --global credential.helper manager-core
 ```
 
 ---
 
-### 🔁 Atualizar URL para SSH
+### Atualizar URL para SSH
 ```bash
-git remote set-url origin git@github.com:beemovier/#nomedorepo
+git remote -v # pra ver atual
+git remote set-url origin git@github.com:usuario/#nomedorepo
 ```
 
 ### Trocar branch
@@ -120,7 +124,8 @@ git branch -d mainantiga # deleta a branch -D força a exclusão
 
 
 ```
+cat -vet ~/.bash_history | grep git
 
 ---
 
-> 💡 Use sempre o `rebase` ao invés de `merge` se quiser menos dor de cabeça com conflitos.
+> Use sempre o `rebase` ao invés de `merge` se quiser menos dor de cabeça com conflitos.
